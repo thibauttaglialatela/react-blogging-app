@@ -11,18 +11,17 @@ const Navbar = () => {
 
     return (
         <nav>
-            <ul>
-                <li>
+
+
                     <NavLink style={checkIsactive} to="/">
                         HOME
                     </NavLink>
-                </li>
-                <li>
+
+
                     <NavLink style={checkIsactive} to="/add-post">
                         ADD POST
                     </NavLink>
-                </li>
-            </ul>
+
         </nav>
     )
 }

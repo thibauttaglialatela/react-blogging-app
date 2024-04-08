@@ -1,17 +1,20 @@
 import './App.css'
-import {BrowserRouter} from "react-router-dom";
-import Home from "./Components/Home.jsx";
-import CreatePost from "./Components/CreatePost.jsx";
+import Navbar from "./Components/NavBar/index.jsx";
+import {Route, Routes} from "react-router-dom";
+import Home from "./pages/Home/index.jsx";
+import CreatePost from "./pages/CreatePost/index.jsx";
 
 function App() {
 
-
-  return (
-      <BrowserRouter>
-        <Home />
-          <CreatePost />
-      </BrowserRouter>
-  )
+    return (
+        <>
+            <Navbar />
+            <Routes>
+                <Route path={"/"} element={<Home />} />
+                <Route path={"/add-post"} element={<CreatePost />} />
+            </Routes>
+        </>
+    )
 }
 
 export default App
