@@ -6,6 +6,7 @@ import CreatePost from "./pages/CreatePost/index.jsx";
 
 function App() {
 
+
     return (
         <>
             <Navbar />
