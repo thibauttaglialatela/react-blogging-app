@@ -6,12 +6,12 @@ import CreatePost from "./Components/CreatePost.jsx";
 function App() {
 
 
-  return (
-      <BrowserRouter>
-        <Home />
-          <CreatePost />
-      </BrowserRouter>
-  )
+    return (
+        <BrowserRouter>
+            <Home/>
+            <CreatePost/>
+        </BrowserRouter>
+    )
 }
 
 export default App
